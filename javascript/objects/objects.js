@@ -36,6 +36,6 @@ const todos = [
   { id: 4, text: "learn javascript", completed: false },
 ];
 
-x = todos[0].text;
+x = todos[1].text;
 
 console.log(x);
