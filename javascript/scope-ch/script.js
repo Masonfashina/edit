@@ -31,4 +31,18 @@ console.log(minMax([1, 2, 3, 4, 5, 6, 7]));
 }) 
 
 
-(2,50)
+(2,4)
+
+
+let x = 100
+let y = 50
+
+function getSum (n1, n2) {
+    const sum = n1 + n2
+    return sum
+}
+
+const sum1 = getSum(x,y)
+const sum2 = getSum(5,10)
+
+console.log(sum1,sum2)
