@@ -15,8 +15,17 @@ if (x == 5) {
 }
 //else ifs and stuff
 
-const d = new Date();
+const d = new Date(29,3,2024,9,0,0);
 const hour = d.getHours();
 // const minute = d.getMinute ();
 
-if (hour > 18) console.log("Good Evening");
+if (hour > 18){
+    console.log("Good Evening")
+} else if (hour < 12){
+    console.log('Good Morning')
+    if (hour <= 12) {
+        console.log('Wake up Bitch!')
+    }
+}else {
+    console.log('Good Afternoon')
+}
