@@ -1,9 +1,10 @@
-const d = new Date(2023, 1, 29, 9, 0, 0);
+const d = new Date(2023, 1, 29, 18, 0, 0);
 const month = d.getMonth();
+const hour = d.getHours();
 
 switch (month) {
   case 1:
-    console.log('It is January');
+    console.log("It is January");
     break;
   case 2:
     console.log("It is February");
@@ -11,6 +12,17 @@ switch (month) {
   case 3:
     console.log("It is March");
     break;
-default:
-    console.log('It is not January,February,or March')
+  default:
+    console.log("It is not January,February,or March");
+}
+
+switch (true) {
+  case hour < 12:
+    console.log("Good Morning");
+    break;
+  case hour < 18:
+    console.log("Good Afternoon");
+    break;
+  default:
+    console.log('Good Evening')
 }
