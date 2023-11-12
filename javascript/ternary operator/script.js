@@ -19,14 +19,21 @@ console.log(canVote);
 //multiple statements
 
 const auth = true;
-let redirect;
+// let redirect;
 
-if (auth) {
-  alert("welcome to the dashboard");
-  redirect = "/dashboard";
-} else {
-  alert("access denied mf");
-  redirect = "/login";
-}
+// if (auth) {
+//   alert("welcome to the dashboard");
+//   redirect = "/dashboard";
+// } else {
+//   alert("access denied mf");
+//   redirect = "/login";
+// }
 
-console.log(redirect);
+// const redirect = auth ? (alert('Welcome to the dash', '/dashboard')) : (alert('Access denied mf'),'/login')
+// console.log(redirect);
+
+
+// auth ? console.log('welcome to the dash') : null;
+
+
+auth && console.log('Welcome to the dashboard')
