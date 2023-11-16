@@ -5,9 +5,22 @@ let i = 0;
 //     i++;
 // }
 
-const arr = [10, 20, 30, 40, 50];
+// const arr = [10, 20, 30, 40, 50];
 
-while (i < arr.length) {
-  console.log(arr[i]);
+// while (i < arr.length) {
+//   console.log(arr[i]);
+//   i++;
+// }
+
+//nesting while loops
+
+while (i <= 5) {
+  console.log("Number " + i);
+
+  let j = 1;
+  while (j <= 5) {
+    console.log(`${i} * ${j} = ${i * j}`);
+    j++;
+  }
   i++;
 }
