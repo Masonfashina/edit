@@ -33,7 +33,7 @@ const auth = true;
 // console.log(redirect);
 
 
-// auth ? console.log('welcome to the dash') : null;
+// auth ? console.log('welcome to the dash') : null;+*
 
 
 auth && console.log('Welcome to the dashboard')
