@@ -11,3 +11,5 @@ for (i = 1; i <= 100; i++) {
 }
 
 // you can also get 'fizzBuzz' by shortening this expression 'if (i % 3 === 0 && i % 5 === 0)' to look for 15, as anything divisible by 15 is divisible by 3 and 5!
+
+// actually you can just do it all by looking for multiples and adding a 'continue'
