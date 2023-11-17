@@ -54,10 +54,16 @@ console.log(squareAndDouble);
 
 //chaining different methods
 
-const evenDouble = numbers
+// const evenDouble = numbers
 
-  .filter((number) => number % 2 === 0)
+//   .filter((number) => number % 2 === 0)
 
-  .map((number) => number * 2);
+//   .map((number) => number * 2);
 
-console.log(evenDouble);
+// console.log(evenDouble);
+
+const evenDouble = numbers 
+.filter((numbers) => numbers % 2 ===0)
+.map((numbers) => numbers * 2)
+
+console.log(evenDouble)
