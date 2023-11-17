@@ -31,6 +31,6 @@ console.log(techCompanies)
 //get companies that started in or after 1980 and ended in or before 2005
 
 
-const targetCompanies = companies.filter((companies) => companies.start >= 1980 , companies.end <= 2005)
+const targetCompanies = companies.filter((companies) => companies.start >= 1980 && companies.end <= 2005)
 
 console.log(targetCompanies)
