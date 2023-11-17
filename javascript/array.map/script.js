@@ -62,8 +62,8 @@ console.log(squareAndDouble);
 
 // console.log(evenDouble);
 
-const evenDouble = numbers 
-.filter((numbers) => numbers % 2 ===0)
-.map((numbers) => numbers * 2)
+const evenDouble = numbers
+  .filter((numbers) => numbers % 2 === 0)
+  .map((numbers) => numbers * 2);
 
-console.log(evenDouble)
+console.log(evenDouble);
