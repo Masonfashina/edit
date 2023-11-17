@@ -1,4 +1,4 @@
-// const numbers = [1,2,3,4,5];
+const numbers = [1,2,3,4,5];
 
 // const doubledNumbers = numbers.map ((number) => number * 2)
 
@@ -43,6 +43,16 @@ console.log(companyInfo)
 
 const companiesinfo = companies.map((company) => {
     return {name: company.name,
-        length: company.end-company.start
+        length: company.end-company.start + ' years'
 }
 });
+
+console.log(companiesinfo)
+
+//chain map methods
+
+const squareAndDouble = numbers
+.map((number) => Math.sqrt(number))
+.map((sqrt) => sqrt * 2);
+
+console.log(squareAndDouble)
