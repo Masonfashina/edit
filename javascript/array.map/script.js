@@ -1,4 +1,4 @@
-const numbers = [1,2,3,4,5];
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // const doubledNumbers = numbers.map ((number) => number * 2)
 
@@ -24,14 +24,11 @@ console.log(companyNames);
 
 //create an array with just company and category
 
-const companyInfo = companies.map((company)=> {
-    return { name: company.name,
-         category: company.category}
-}
+const companyInfo = companies.map((company) => {
+  return { name: company.name, category: company.category };
+});
 
-);
-
-console.log(companyInfo)
+console.log(companyInfo);
 
 //create an array of each company in operational length
 
@@ -42,17 +39,25 @@ console.log(companyInfo)
 //create an array of each company name and operational length
 
 const companiesinfo = companies.map((company) => {
-    return {name: company.name,
-        length: company.end-company.start + ' years'
-}
+  return { name: company.name, length: company.end - company.start + " years" };
 });
 
-console.log(companiesinfo)
+console.log(companiesinfo);
 
 //chain map methods
 
 const squareAndDouble = numbers
-.map((number) => Math.sqrt(number))
-.map((sqrt) => sqrt * 2);
+  .map((number) => Math.sqrt(number))
+  .map((sqrt) => sqrt * 2);
 
-console.log(squareAndDouble)
+console.log(squareAndDouble);
+
+//chaining different methods
+
+const evenDouble = numbers
+
+  .filter((number) => number % 2 === 0)
+
+  .map((number) => number * 2);
+
+console.log(evenDouble);
