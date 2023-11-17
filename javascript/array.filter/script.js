@@ -10,10 +10,10 @@ const companies = [
     {name:'company two', category: 'auto', start: 1982, end: 2002},
     {name:'company three', category: 'retail', start: 1998, end: 2008},
     {name:'company four', category: 'technology', start: 1989, end: 2006},
-    {name:'company five', category: 'finance', start: 2009, end: 2022},
+    {name:'company five', category: 'finance', start: 2007, end: 2022},
     {name:'company six', category: 'finance', start: 1996, end: 2008},
     {name:'company seven', category: 'auto', start: 1982, end: 2009},
-    {name:'company eight', category: 'retail', start: 1988, end: 2004},
+    {name:'company eight', category: 'retail', start: 2001, end: 2004},
     {name:'company nine', category: 'technology', start: 2017, end: 2020}
 ]
 const retailCompanies = companies.filter((companies) => companies.category ==='retail')
@@ -34,3 +34,7 @@ console.log(techCompanies)
 const targetCompanies = companies.filter((companies) => companies.start >= 1980 && companies.end <= 2005)
 
 console.log(targetCompanies)
+
+const LongCompanies = companies.filter((companies) => companies.end - companies.start >= 10)
+
+console.log(LongCompanies)
