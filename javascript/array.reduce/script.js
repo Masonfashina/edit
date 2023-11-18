@@ -11,6 +11,11 @@ const cart =[
     {id:3, name: 'Product 3', price: 175},
 ]
 
-const finalPrice =cart.reduce((acc,product) => acc + product.price,0)
+// const finalPrice =cart.reduce((acc,product) => acc + product.price,0)
 
-console.log('your total bill is ' + '$' + finalPrice)
+// console.log('your total bill is ' + '$' + finalPrice)
+
+
+const total = cart.reduce((acc,product) => acc + product.price,0)
+
+console.log('The total amount due is ' + '$',total)
