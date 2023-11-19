@@ -15,5 +15,11 @@ child.parentNode.style.backgroundColor = '#ccc';
 child.parentNode.style.padding = '12px';
 child.parentNode.style.borderRadius = '12px';
 
+//siblins
+
+const secondItem = document.querySelector('.child:nth-child(2)')
+
+output = secondItem.nextSibling
+
 console.log(output);
 
