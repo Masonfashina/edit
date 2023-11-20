@@ -20,8 +20,16 @@ itemList.classList.forEach((c)=> console.log(c));
 
 //change style directly
 
-itemList.style.lineHeight = '3'
+// itemList.style.lineHeight = '3'
+
+items.forEach((item, index) => {
+    item.style.color = 'red';
+
+    if (index ===2) {
+        item.style.fontSize = '18px';
+        item.style.color ='blue'
+    }
+});
 }
 
 document.querySelector("button").onclick = run;
-
