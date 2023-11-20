@@ -1,0 +1,12 @@
+body {
+    background-color: #555;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 20px;
+    padding: 10px;
+}
+
+.container header img {
+    display: inline;
+    size: 10px;
+}
