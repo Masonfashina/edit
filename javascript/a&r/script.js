@@ -32,4 +32,12 @@ items.forEach((item, index) => {
 });
 }
 
-document.querySelector("button").onclick = run;
+// document.querySelector("button").onclick = run;
+
+
+//events
+
+const clearbtn = document.querySelector('button')
+
+clearbtn.addEventListener('click',() => alert('hahaha')
+)
