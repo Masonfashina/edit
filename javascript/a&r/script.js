@@ -50,16 +50,19 @@ const H1 = document.querySelector("h1");
 const onClick = () => console.log("Click event");
 
 const onDoubleClick = () => {
-    if (document.body.style.backgroundColor !== 'black'){
-        document.body.style.backgroundColor = 'black';
-        document.body.style.color = 'white'
-    }
-    else {
-        document.body.style.backgroundColor = 'white';
-        document.body.style.color = 'black'
-    }
-    
+  if (document.body.style.backgroundColor !== "black") {
+    document.body.style.backgroundColor = "black";
+    document.body.style.color = "white";
+  } else {
+    document.body.style.backgroundColor = "white";
+    document.body.style.color = "black";
+  }
 };
+
+const onRightClick = () => console.log("Click event");
 
 H1.addEventListener("click", onClick);
 H1.addEventListener("dblclick", onDoubleClick);
+H1.addEventListener("contextmenu", onRightClick);
+
+
