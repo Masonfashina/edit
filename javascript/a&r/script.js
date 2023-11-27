@@ -64,5 +64,3 @@ const onRightClick = () => console.log("Click event");
 H1.addEventListener("click", onClick);
 H1.addEventListener("dblclick", onDoubleClick);
 H1.addEventListener("contextmenu", onRightClick);
-
-
