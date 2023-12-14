@@ -14,3 +14,8 @@ fetch('./movies.json')
 fetch('./test.txt')
 .then((response)=> response.text())
 .then((data)=>console.log(data))
+
+//fetching from API
+fetch('https://api.github.com/users/masonfashina')
+.then((response)=> response.json())
+.then((data)=>console.log(data))
