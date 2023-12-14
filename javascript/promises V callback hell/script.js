@@ -11,11 +11,9 @@ xhr.onreadystatechange =function(){
 }
 
 setTimeout(()=>{
-xhr.send()
-},Math.floor(math.random()*3000)+ 1000)
+    xhr.send();
+}, Math.floor(Math.random() * 3000)+ 1000)
 }
-
-getData('./movies.json', (data)=>{
-    console.log(data);
-    getData('./a')
-})
+const moviesPromise = getData('./movies.json');
+const actorsPromise = getData('./actors.json');
+const directorsPromise = getData('./directors.json');
