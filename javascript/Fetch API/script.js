@@ -18,4 +18,4 @@ fetch('./test.txt')
 //fetching from API
 fetch('https://api.github.com/users/masonfashina')
 .then((response)=> response.json())
-.then((data)=>console.log(data))
+.then((data)=> document.querySelector('h1').textContent = data.login)
